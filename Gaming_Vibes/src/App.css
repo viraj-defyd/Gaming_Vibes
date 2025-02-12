@@ -1,0 +1,19 @@
+:root {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgb(41, 34, 72),rgb(71, 72, 77));
+}
+.mainContainer{
+  width: 85vw;
+  height: 85vh;
+  display: flex;
+  background-color: rgb(24, 8, 56);
+  border: 0px solid #000;
+  border-radius: 30px
+}

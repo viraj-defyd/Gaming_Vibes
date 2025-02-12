@@ -1,0 +1,51 @@
+.container{
+    width: 55vw;
+    height: 80vh;
+    background-color: rgb(32, 48, 70);
+    margin-right: 10px;
+    margin-left: 20px;
+    border: 0px solid #000;
+    border-radius: 40px;
+    position: relative;
+    right: 20px;
+}
+.headerFirst{
+    position: relative;
+    display: flex;
+    margin: 20px;
+}
+.headerSubheader{
+    text-align: left;
+    margin-left: 40px;
+    position: relative;
+    bottom: 20px;
+}
+.greetHeader{
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+}
+.headerLogos{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    left: 500px;
+}
+.headerLogo{
+    position: relative;
+    margin-right: 25px;
+    font-size: 25px;
+    color: rgb(104, 107, 123);
+    transition: transform 0.5s ease-in;
+}
+.headerLogo :hover{
+        color: rgb(255,135,183);
+        transform: scale(1.1);
+}
