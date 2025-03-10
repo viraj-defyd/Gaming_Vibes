@@ -1,0 +1,19 @@
+name: Create an epic
+description: Create an epic to plan feature 
+title: '[Epic]: '
+labels: ['enhancement']
+assignees: []
+projects: []
+body:
+  - type: textarea
+    attributes: 
+      label: Define the epic.
+      description: Descripe outcome of the epic, usecases, user role that benefits
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: What is the outcome of this feature? What will change?
+    validations:
+      required: true
