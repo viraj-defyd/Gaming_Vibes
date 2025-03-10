@@ -21,7 +21,7 @@ name: "Create an Epic"
 description: "A large initiative that consists of multiple stories and sub-tasks."
 title: "[EPIC]: "
 labels: ["epic"]
-assignees: ''
+assignees: ['']
 project: []
 body:
   - type: markdown
