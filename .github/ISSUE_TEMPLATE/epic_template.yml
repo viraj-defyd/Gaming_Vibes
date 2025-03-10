@@ -1,19 +1,106 @@
-name: Create an epic
-description: Create an epic to plan feature 
-title: '[Epic]: '
-labels: ['enhancement']
-assignees: []
-projects: []
+# name: Create an epic
+# description: Create an epic to plan feature 
+# title: '[Epic]: '
+# labels: ['enhancement']
+# assignees: []
+# projects: []
+# body:
+#   - type: textarea
+#     attributes: 
+#       label: Define the epic.
+#       description: Descripe outcome of the epic, usecases, user role that benefits
+#     validations:
+#       required: true
+#   - type: textarea
+#     attributes:
+#       label: Expected Behavior
+#       description: What is the outcome of this feature? What will change?
+#     validations:
+#       required: true
+name: "Create an Epic"
+description: "A large initiative that consists of multiple stories and sub-tasks."
+title: "[EPIC]: "
+labels: ["epic"]
+assignees: ''
+project: []
 body:
-  - type: textarea
-    attributes: 
-      label: Define the epic.
-      description: Descripe outcome of the epic, usecases, user role that benefits
-    validations:
-      required: true
-  - type: textarea
+  - type: markdown
     attributes:
-      label: Expected Behavior
-      description: What is the outcome of this feature? What will change?
+      value: "## 🌟 Epic Details"
+
+  - type: input
+    id: epic-title
+    attributes:
+      label: "Epic Title"
+      description: "Provide a short, descriptive title for this epic."
+      placeholder: "e.g., Implement User Authentication"
+
+  - type: textarea
+    id: epic-description
+    attributes:
+      label: "Epic Description"
+      description: "Describe the goal and scope of this epic."
+      placeholder: "This epic covers the implementation of user authentication, including login, logout, and account management."
     validations:
       required: true
+
+  - type: textarea
+    id: epic-goals
+    attributes:
+      label: "Goals"
+      description: "What are the key objectives of this epic?"
+      placeholder: "- Improve security\n- Enhance user experience\n- Ensure scalability"
+  
+  - type: checkboxes
+    id: epic-links
+    attributes:
+      label: "Related Stories"
+      description: "Select or add the related user stories for this epic."
+      options:
+        - label: "Story #1 - [ ]"
+        - label: "Story #2 - [ ]"
+        - label: "Story #3 - [ ]"
+
+  - type: markdown
+    attributes:
+      value: "## 📌 Stories & Sub-Tasks"
+
+  - type: textarea
+    id: stories
+    attributes:
+      label: "List of Stories"
+      description: "Provide links to related stories (use issue numbers if available)."
+      placeholder: "- [ ] #123 Implement login system\n- [ ] #124 Implement logout functionality"
+
+  - type: textarea
+    id: sub-tasks
+    attributes:
+      label: "Sub-Tasks for Stories"
+      description: "Break down stories into smaller sub-tasks."
+      placeholder: "- [ ] Design login UI (#123)\n- [ ] Implement authentication API (#123)"
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "Dependencies"
+      description: "List any dependencies that must be completed before this epic."
+      placeholder: "- Story #123 must be completed before #124"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority Level"
+      description: "Set the priority for this epic."
+      options:
+        - "High"
+        - "Medium"
+        - "Low"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: "Additional Notes"
+      description: "Any other important information related to this epic."
+      placeholder: "e.g., Need feedback from the design team before starting development."
